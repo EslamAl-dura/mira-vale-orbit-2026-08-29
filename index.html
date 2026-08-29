@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mira Vale — creative technologist and interface artist.">
+  <title>Mira Vale — Signal / Matter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=IBM+Plex+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Mira Vale home"><span class="brand-mark">MV</span><span>mira / vale</span></a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#work" data-i18n="nav.work">Work</a>
+      <a href="#orbit" data-i18n="nav.orbit">Orbit</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-tools">
+      <button class="tool-button" id="langToggle" type="button" aria-label="Switch language">ع</button>
+      <button class="tool-button" id="themeToggle" type="button" aria-label="Toggle color theme">☼</button>
+      <a class="availability" href="#contact"><span class="pulse"></span><span data-i18n="available">Available for 2026</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span>00.01</span><span data-i18n="hero.eyebrow">Creative technologist / signal collector</span></p>
+        <h1 data-i18n="hero.title">I make<br><em>invisible</em><br>feel close.</h1>
+        <p class="hero-intro" data-i18n="hero.intro">Interfaces, installations, and identities for people building a more curious future.</p>
+        <a class="circle-link" href="#work"><span data-i18n="hero.cta">Explore the work</span><b>↘</b></a>
+      </div>
+      <div class="hero-orbit reveal" aria-label="Abstract orbital artwork">
+        <div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="orbit-ring ring-three"></div>
+        <div class="planet"><span>MV</span></div><div class="satellite satellite-one"></div><div class="satellite satellite-two"></div>
+        <p class="orbit-caption">34° 03′ N / 118° 14′ W<br><span>field note: listen first</span></p>
+      </div>
+      <div class="hero-stamp">EST.<br><strong>2014</strong></div>
+      <div class="scroll-note"><span data-i18n="scroll">Scroll to observe</span><i></i></div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-label reveal"><span>00.02</span><span data-i18n="about.label">The person behind the signal</span></div>
+      <div class="about-grid">
+        <h2 class="display reveal" data-i18n="about.title">Not a designer.<br><span>A translator.</span></h2>
+        <div class="about-copy reveal">
+          <p class="large" data-i18n="about.lead">I work where human instinct meets emerging technology — translating complex ideas into experiences you can feel in your hands.</p>
+          <p data-i18n="about.body">From a three-storey light instrument in Rotterdam to a quiet app for grieving families, my practice is built around one question: what should this make a person notice?</p>
+          <div class="stat-row"><div><strong>12</strong><span data-i18n="stats.years">years making</span></div><div><strong>19</strong><span data-i18n="stats.cities">cities collaborated</span></div><div><strong>∞</strong><span data-i18n="stats.questions">open questions</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section" id="work">
+      <div class="section-heading reveal"><div class="section-label"><span>00.03</span><span data-i18n="work.label">Selected transmissions</span></div><h2 class="display" data-i18n="work.title">Recent<br><span>fieldwork.</span></h2></div>
+      <div class="project-grid">
+        <article class="project-card project-main reveal"><div class="project-visual visual-tide"><span class="visual-word">TIDE<br>TABLE</span><span class="visual-coordinate">51° 55′ N</span></div><div class="project-meta"><span>01 / 2025</span><h3>Aftertide Atlas</h3><p data-i18n="project.one">A living archive of coastal memory, built with 640 voices and one restless ocean.</p><a href="#contact" aria-label="Ask about Aftertide Atlas">↗</a></div></article>
+        <article class="project-card project-offset reveal"><div class="project-visual visual-echo"><div class="echo-bars"><i></i><i></i><i></i><i></i><i></i></div><span class="visual-coordinate">SONIC / 04</span></div><div class="project-meta"><span>02 / 2024</span><h3>Echoes for Tomorrow</h3><p data-i18n="project.two">An identity system for a museum that lets visitors hear the future arriving.</p><a href="#contact" aria-label="Ask about Echoes for Tomorrow">↗</a></div></article>
+        <article class="project-card project-small reveal"><div class="project-visual visual-moss"><span class="moss-dot"></span><span class="visual-word">SOFT<br>PROTOCOL</span></div><div class="project-meta"><span>03 / 2023</span><h3>Soft Protocol</h3><p data-i18n="project.three">A generous operating system for public space, made with plants and patient code.</p><a href="#contact" aria-label="Ask about Soft Protocol">↗</a></div></article>
+      </div>
+    </section>
+
+    <section class="orbit-section section" id="orbit">
+      <div class="orbit-header reveal"><div class="section-label"><span>00.04</span><span data-i18n="orbit.label">Current orbit</span></div><p data-i18n="orbit.intro">A small index of the things currently pulling my attention.</p></div>
+      <div class="orbit-list reveal">
+        <div class="orbit-item"><span>01</span><strong data-i18n="orbit.one">Tactile interfaces</strong><b>↗</b></div>
+        <div class="orbit-item"><span>02</span><strong data-i18n="orbit.two">Low-tech futures</strong><b>↗</b></div>
+        <div class="orbit-item"><span>03</span><strong data-i18n="orbit.three">Listening as research</strong><b>↗</b></div>
+        <div class="orbit-item"><span>04</span><strong data-i18n="orbit.four">Cities after dark</strong><b>↗</b></div>
+      </div>
+      <div class="skills reveal"><span>Art direction</span><span>Creative coding</span><span>Experience design</span><span>Spatial systems</span><span>Sound / light</span></div>
+    </section>
+
+    <section class="quote-section section reveal" aria-label="Testimonial"><div class="quote-mark">“</div><blockquote data-i18n="quote">Mira has the rare ability to make a room full of engineers talk about tenderness — and then turn that tenderness into a working system.</blockquote><cite>— Noor Haddad, curator / The Lumen Assembly</cite></section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-intro reveal"><div class="section-label"><span>00.05</span><span data-i18n="contact.label">Open frequency</span></div><h2 class="display" data-i18n="contact.title">Have a signal?<br><span>Send it.</span></h2><p data-i18n="contact.body">Tell me what you are making, what is unclear, or what keeps returning in your dreams.</p></div>
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="field"><label for="name" data-i18n="form.name">Your name</label><input id="name" name="name" type="text" autocomplete="name" required><small class="error" id="nameError"></small></div>
+        <div class="field"><label for="email" data-i18n="form.email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required><small class="error" id="emailError"></small></div>
+        <div class="field"><label for="message" data-i18n="form.message">A few words</label><textarea id="message" name="message" rows="4" required></textarea><small class="error" id="messageError"></small></div>
+        <button class="submit-button" type="submit"><span data-i18n="form.submit">Transmit message</span><b>↗</b></button><p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="brand"><span class="brand-mark">MV</span><span>mira / vale</span></div><p data-i18n="footer">Made between Los Angeles and everywhere the night train goes.</p><div class="footer-links"><a href="mailto:hello@miravale.studio">Email</a><a href="#home">Top ↑</a></div></footer>
+</body>
+</html>
